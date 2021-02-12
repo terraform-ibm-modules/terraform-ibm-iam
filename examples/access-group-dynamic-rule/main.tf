@@ -9,7 +9,7 @@ provider "ibm" {
 
 module "access_group_dynamic_rule" {
   source  = "terraform-ibm-modules/iam/ibm//modules/access-group-dynamic-rule"
-
+  
   access_group_id   =  var.access_group_id
   name              =  var.name
   expiration        =  var.expiration
