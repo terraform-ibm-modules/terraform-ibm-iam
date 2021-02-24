@@ -8,7 +8,7 @@ provider "ibm" {
 
 module "access_group_policy" {
   source               = "terraform-ibm-modules/iam/ibm//modules/access-group-policy"
-  
+
   access_group_id      = var.access_group_id
   roles                = var.roles
   tags                 = var.tags
