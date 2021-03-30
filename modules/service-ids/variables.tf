@@ -4,14 +4,14 @@
 #####################################################
 
 variable "name" {
-    description = "Name of the service ID"
-    type        = string
+  description = "Name of the service ID"
+  type        = string
 }
 
 variable "description" {
-    description = "Description to Service ID"
-    type        = string
-    default     = null
+  description = "Description to Service ID"
+  type        = string
+  default     = null
 }
 
 variable "tags" {

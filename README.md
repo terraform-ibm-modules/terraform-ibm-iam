@@ -15,7 +15,7 @@ This is a collection of modules that make it easier to provision a IAM resources
 
 ## Compatibility
 
-This module is meant for use with Terraform 0.13. 
+This module is meant for use with Terraform 0.13.
 
 ## Usage
 
@@ -49,7 +49,7 @@ module "access_group_members" {
   service_ids       = var.service_ids
 }
 ```
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -58,7 +58,7 @@ If we want to make use of a particular version of module, then set the argument 
 ### Terraform plugins
 
 - [Terraform](https://www.terraform.io/downloads.html) 0.13
-- [terraform-provider-ibm](https://github.com/IBM-Cloud/terraform-provider-ibm) 
+- [terraform-provider-ibm](https://github.com/IBM-Cloud/terraform-provider-ibm)
 
 ## Install
 
@@ -71,7 +71,17 @@ Be sure you have the correct Terraform version (0.13), you can choose the binary
 
 Be sure you have the compiled plugins on $HOME/.terraform.d/plugins/
 
-- [terraform-provider-ibm](https://github.com/IBM-Cloud/terraform-provider-ibm) 
+- [terraform-provider-ibm](https://github.com/IBM-Cloud/terraform-provider-ibm)
+
+### Pre-commit Hooks
+
+Run the following command to execute the pre-commit hooks defined in `.pre-commit-config.yaml` file
+
+  `pre-commit run -a`
+
+We can install pre-coomit tool using
+
+  `pip install pre-commit`
 
 ## How to input varaible values through a file
 

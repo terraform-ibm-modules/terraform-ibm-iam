@@ -1,6 +1,6 @@
 # Module iam_service_ids
 
-This module is used to create a IAM service IDs. 
+This module is used to create a IAM service IDs.
 
 ## Example Usage
 ```
@@ -16,7 +16,7 @@ module "iam_service_ids" {
 }
 
 ```
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 

@@ -9,17 +9,17 @@ provider "ibm" {
 
 module "custom_role" {
   source  = "terraform-ibm-modules/iam/ibm//modules/user-invite"
- 
+
   user_email_addresses     = var.user_email_addresses
   access_groups            = var.access_groups
-  iam_policy               = var.iam_policy 
+  iam_policy               = var.iam_policy
   classic_infra_roles      = var.classic_infra_roles
   cloud_foundry_roles      = var.cloud_foundry_roles
 }
 
 ```
 
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -72,4 +72,3 @@ Similarly to to remove the access group run the command
 
    `terraform destroy -var-file="input.tfvars"`
 
-   

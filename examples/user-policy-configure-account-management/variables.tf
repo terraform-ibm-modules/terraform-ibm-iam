@@ -5,14 +5,14 @@
 
 
 variable "ibm_id" {
-    description = "IBMid or email address of the user."
-    type        = string
+  description = "IBMid or email address of the user."
+  type        = string
 }
 
 variable "roles" {
-    description = "list of roles"
-    type        = list(string)
-    default     = null
+  description = "list of roles"
+  type        = list(string)
+  default     = null
 }
 
 variable "tags" {
@@ -23,15 +23,15 @@ variable "tags" {
 
 
 variable "account_management" {
-    description = "Enter true if you want give access to all account management services"
-    type        = bool
-    default     = false
+  description = "Enter true if you want give access to all account management services"
+  type        = bool
+  default     = false
 }
 
 variable "resources" {
-    type = any
-    description = "A nested block describes the resource of this policy."
-    default     = null
+  type        = any
+  description = "A nested block describes the resource of this policy."
+  default     = null
 }
 
 

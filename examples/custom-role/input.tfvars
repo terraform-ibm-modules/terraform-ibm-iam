@@ -13,4 +13,4 @@ actions      = ["kms.registrations.merge","kms.registrations.write"]
 ******************************************************/
 
 
-actions      = ["kms.secrets.rotate"]
+actions = ["kms.secrets.rotate"]

@@ -1,6 +1,6 @@
 # Module authorization_policy
 
-This module is used to apply IAM service authorization policy. 
+This module is used to apply IAM service authorization policy.
 
 ## Example Usage
 ```
@@ -23,7 +23,7 @@ module "authorization_policy" {
 }
 
 ```
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -52,7 +52,7 @@ To create access members group policy run the following command
 Similarly to to remove the access group policy run the command
 
    `terraform destroy -var-file="input.tfvars"`
-   
+
 NOTE: If user wants to configure any of the optional arguments, needs to overwrite the `null` value in respective variables.tf file.
 
 

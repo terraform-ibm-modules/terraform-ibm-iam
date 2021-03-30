@@ -1,6 +1,6 @@
 # Module access_group
 
-This module is used to create a acess group. Access groups can be used to define a set of permissions that you want to grant to a group of users.
+This module is used to create a acess group. Access groups can be used to define a set of permissions that you want to grant to a group of users. 
 
 ## Example Usage
 ```
@@ -16,7 +16,7 @@ module "access_group" {
 
 ```
 
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -38,4 +38,3 @@ Similarly to to remove the access group run the command
 
    `terraform destroy -var-file="input.tfvars"`
 
-   

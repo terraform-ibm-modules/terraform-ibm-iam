@@ -15,7 +15,7 @@ module "access_group_members" {
 }
 
 ```
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -37,4 +37,3 @@ Similarly to to remove the access group members run the command
 
    `terraform destroy -var-file="input.tfvars"`
 
-   

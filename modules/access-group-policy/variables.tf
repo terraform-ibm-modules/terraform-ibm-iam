@@ -4,13 +4,13 @@
 #####################################################
 
 variable "access_group_id" {
-    description = "The ID of the access group."
-    type        = string
+  description = "The ID of the access group."
+  type        = string
 }
 
 variable "roles" {
-    description = "list of roles"
-    type        = list(string)
+  description = "list of roles"
+  type        = list(string)
 }
 
 variable "tags" {
@@ -20,13 +20,13 @@ variable "tags" {
 }
 
 variable "account_management" {
-    description = "Attributes of the resource"
-    type        = bool
-    default     = false
+  description = "Attributes of the resource"
+  type        = bool
+  default     = false
 }
 
 variable "resources" {
-  type = list(any)
+  type    = list(any)
   default = []
 }
 
