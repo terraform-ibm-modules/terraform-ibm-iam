@@ -18,7 +18,7 @@ module "access_group_dynamic_rule" {
 }
 
 ```
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 

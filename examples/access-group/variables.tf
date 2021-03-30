@@ -4,14 +4,14 @@
 #####################################################
 
 variable "name" {
-    description = "Name of the access group"
-    type        = string
+  description = "Name of the access group"
+  type        = string
 }
 
 variable "description" {
-    description = "Description to access group"
-    type        = string
-    default     = null
+  description = "Description to access group"
+  type        = string
+  default     = null
 }
 
 variable "tags" {

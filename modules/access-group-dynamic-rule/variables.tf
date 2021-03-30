@@ -4,13 +4,13 @@
 #####################################################
 
 variable "access_group_id" {
-    description = "The ID of the access group."
-    type        = string
+  description = "The ID of the access group."
+  type        = string
 }
 
 variable "name" {
-    description = "name of the dynamic rule for the IAM access group."
-    type        = string
+  description = "name of the dynamic rule for the IAM access group."
+  type        = string
 }
 
 variable "expiration" {
@@ -19,13 +19,13 @@ variable "expiration" {
 }
 
 variable "identity_provider" {
-    description = "Enter the URI for your identity provider."
-    type        = string
+  description = "Enter the URI for your identity provider."
+  type        = string
 }
 
 variable "conditions" {
-    description = "list of conditions that the rule must satisfy.."
-    type        = list(map(string))
+  description = "list of conditions that the rule must satisfy.."
+  type        = list(map(string))
 }
 
 

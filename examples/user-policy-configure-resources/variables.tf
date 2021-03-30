@@ -4,14 +4,14 @@
 #####################################################
 
 variable "ibm_id" {
-    description = "IBMid or email address of the user."
-    type        = string
+  description = "IBMid or email address of the user."
+  type        = string
 }
 
 variable "roles" {
-    description = "list of roles"
-    type        = list(string)
-    default     = null
+  description = "list of roles"
+  type        = list(string)
+  default     = null
 }
 
 variable "tags" {
@@ -21,13 +21,13 @@ variable "tags" {
 }
 
 variable "account_management" {
-    description = "Attributes of the resource"
-    type        = bool
-    default     = false
+  description = "Attributes of the resource"
+  type        = bool
+  default     = false
 }
 
 variable "resources" {
-  type = any
+  type    = any
   default = null
 }
 

@@ -4,14 +4,14 @@
 #####################################################
 
 variable "name" {
-    description = "Enter the name of the custom role."
-    type        = string
+  description = "Enter the name of the custom role."
+  type        = string
 }
 
 variable "description" {
-    description = "Enter description of the custom role. Make sure to include information about the level of access this role assignment gives a user"
-    type        = string
-    default     = null
+  description = "Enter description of the custom role. Make sure to include information about the level of access this role assignment gives a user"
+  type        = string
+  default     = null
 }
 
 variable "display_name" {

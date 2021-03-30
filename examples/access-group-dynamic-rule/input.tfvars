@@ -16,8 +16,8 @@ conditions = [{
 ******************************************************/
 
 conditions = [{
-    claim    = "blueGroups"
-    operator = "CONTAINS"
-    value    = "test-bluegroup-saml"
-    },
+  claim    = "blueGroups"
+  operator = "CONTAINS"
+  value    = "test-bluegroup-saml"
+  },
 ]

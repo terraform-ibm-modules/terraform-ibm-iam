@@ -12,14 +12,14 @@ module "custom_role" {
 
   name         = var.name
 	display_name = var.display_name
-	description  = var.description 
+	description  = var.description
 	service      = var.service
 	actions      = var.actions
 }
 
 ```
 
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -43,4 +43,3 @@ Similarly to to remove the access group run the command
 
    `terraform destroy -var-file="input.tfvars"`
 
-   

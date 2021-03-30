@@ -4,14 +4,14 @@
 #####################################################
 
 variable "iam_service_id" {
-    description = "The ID of the service ID."
-    type        = string
+  description = "The ID of the service ID."
+  type        = string
 }
 
 variable "roles" {
-    description = "list of roles"
-    type        = list(string)
-    default     = null
+  description = "list of roles"
+  type        = list(string)
+  default     = null
 }
 
 variable "tags" {
@@ -21,13 +21,13 @@ variable "tags" {
 }
 
 variable "account_management" {
-    description = "Attributes of the resource"
-    type        = bool
-    default     = false
+  description = "Attributes of the resource"
+  type        = bool
+  default     = false
 }
 
 variable "resources" {
-  type = list(any)
+  type    = list(any)
   default = []
 }
 

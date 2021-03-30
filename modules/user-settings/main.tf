@@ -4,6 +4,6 @@
 #####################################################
 
 resource "ibm_iam_user_settings" "settings" {
-	iam_id   			   = var.iam_id
-	allowed_ip_addresses   = var.allowed_ip_addresses
+  iam_id               = var.iam_id
+  allowed_ip_addresses = var.allowed_ip_addresses
 }

@@ -1,6 +1,6 @@
 # Module user_settings
 
-This module is used to configure an user with list of ip addresses from which he can login to IBM Cloud account to which he was invited. 
+This module is used to configure an user with list of ip addresses from which he can login to IBM Cloud account to which he was invited.
 
 ## Example Usage
 ```
@@ -10,13 +10,13 @@ provider "ibm" {
 
 module "user_policy" {
   source  = "terraform-ibm-modules/iam/ibm//modules/user-settings"
-  
+
   iam_id                 = var.iam_id
   allowed_ip_addresses   = var.allowed_ip_addresses
 }
 
 ```
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
@@ -37,7 +37,7 @@ To create access members group policy run the following command
 Similarly to to remove the access group policy run the command
 
    `terraform destroy -var-file="input.tfvars"`
-   
+
 
 NOTE : Do not specify arguments "account_management" and "resources" at the same time as both conflict with each other.
 

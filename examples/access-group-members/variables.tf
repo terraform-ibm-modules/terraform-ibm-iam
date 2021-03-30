@@ -4,14 +4,14 @@
 #####################################################
 
 variable "access_group_id" {
-    description = "Enter the ID of the access group."
-    type        = string
+  description = "Enter the ID of the access group."
+  type        = string
 }
 
 variable "ibm_ids" {
-    description = "A list of IBM IDs that you want to add to or remove from the access group."
-    type        = list(string)
-    default     = null
+  description = "A list of IBM IDs that you want to add to or remove from the access group."
+  type        = list(string)
+  default     = null
 }
 
 variable "service_ids" {

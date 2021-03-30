@@ -12,6 +12,6 @@ service_ids = ["ServiceId-1","ServiceId-2"]
 
 ******************************************************/
 
-ibm_ids     = ["example@in.ibm.com"]
+ibm_ids = ["example@in.ibm.com"]
 
-service_ids = ["ServiceId-1","ServiceId-2"]
+service_ids = ["ServiceId-1", "ServiceId-2"]

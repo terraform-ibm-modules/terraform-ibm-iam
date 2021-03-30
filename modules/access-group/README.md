@@ -17,7 +17,7 @@ module "access_group" {
 
 ```
 
-## NOTE: 
+## NOTE:
 
 If we want to make use of a particular version of module, then set the argument "version" to respective module version.
 
