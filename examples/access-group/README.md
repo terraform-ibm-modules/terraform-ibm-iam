@@ -1,6 +1,6 @@
 # Module access_group
 
-This module is used to create a acess group. Access groups can be used to define a set of permissions that you want to grant to a group of users. 
+This module is used to create a acess group. Access groups can be used to define a set of permissions that you want to grant to a group of users.
 
 ## Example Usage
 ```
