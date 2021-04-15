@@ -13,7 +13,7 @@ This is a collection of modules that make it easier to provision a IAM resources
 * [user-settings](modules/user-settings)
 * [user-invite](modules/user-invite)
 
-## Compatibility
+## Compatibility 
 
 This module is meant for use with Terraform 0.13.
 
