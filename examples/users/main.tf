@@ -6,8 +6,11 @@
 provider "ibm" {
 }
 
-module "user_invite" {
-  source = "terraform-ibm-modules/iam/ibm//modules/user-invite"
+module "users" {
+  // Uncomment following line to point the source to registry level module
+  //source = "terraform-ibm-modules/iam/ibm//modules/users"
+
+  source = "../../modules/users"
 
   user_email_addresses               = var.user_email_addresses
   access_groups                      = var.access_groups

@@ -8,13 +8,17 @@ This module is used to assign policies to already invited users. To assign a pol
 provider "ibm" {
 }
 
-module "service_policy" {
-  source               = "terraform-ibm-modules/iam/ibm//modules/user-policy"
-  ibm_id               = var.ibm_id
-  roles                = var.roles
-  tags                 = var.tags
-  resources            = var.resources
-  account_management   = var.account_management
+module "user_policy" {
+  // Uncomment following line to point the source to registry level module
+  //source = "terraform-ibm-modules/iam/ibm//modules/user-policy"
+
+  source = "../../modules/user-policy"
+
+  ibm_id             = var.ibm_id
+  roles              = var.roles
+  tags               = var.tags
+  resources          = var.resources
+  account_management = var.account_management
 }
 
 ```
