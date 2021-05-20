@@ -6,7 +6,8 @@
 
 user_email_addresses = ["user1@in.ibm.com", "user21@in.ibm.com"]
 
-access_groups = ["AccessGroupId-bec6e5e7-d31b-4cd7-914e-9166a46721c5"]
+
+access_groups = ["AccessGroupId-8a3-c90d-43c8-ae26-6376acfabf4a"]
 
 iam_policies = [{
   roles                          = ["Manager", "Viewer", "Administrator"]
@@ -33,3 +34,4 @@ cloud_foundry_roles = [{
   }, ]
   },
 ]
+

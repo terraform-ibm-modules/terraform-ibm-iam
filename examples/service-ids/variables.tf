@@ -20,3 +20,17 @@ variable "tags" {
   default     = null
 }
 
+variable "provision" {
+  type        = bool
+  description = "Would you like to provision a new access group (true/false)"
+  default     = true
+}
+
+
+############ service policies ####################
+
+variable "policies" {
+  description = "list of policies"
+  type        = map(any)
+}
+

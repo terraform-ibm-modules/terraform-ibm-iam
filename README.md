@@ -2,16 +2,12 @@
 
 This is a collection of modules that make it easier to provision a IAM resources on IBM Cloud Platform:
 * [access-group](modules/access-group)
-* [access-group-policy](modules/access-group-policy)
-* [access-group-members](modules/access-group-members)
-* [access-group-dynamic-rule](modules/access-group-dynamic-rule)
 * [service-ids](modules/service-ids)
-* [service-policy](modules/service-policy)
-* [authorization-policy](modules/authorization-policy)
+* [service-authorization](modules/service-authorization)
 * [custom-role](modules/custom-role)
+* [users](modules/users)
 * [user-policy](modules/user-policy)
 * [user-settings](modules/user-settings)
-* [user-invite](modules/user-invite)
 
 ## Compatibility
 
@@ -26,28 +22,28 @@ provider "ibm" {
 }
 
 module "access_group" {
-  source  = "terraform-ibm-modules/iam/ibm//modules/access-group"
+  // Uncomment following line to point the source to registry level module
+  //source = "terraform-ibm-modules/iam/ibm//modules/access-group"
 
-  name         = var.name
-  tags         = var.tags
-  description  = var.description
+  source = "../../modules/access-group"
+
+  ######### access group ######################
+  name        = var.name
+  tags        = var.tags
+  description = var.description
+  provision   = var.provision
+
+  ######### access group members ##############
+  ibm_ids     = var.ibm_ids
+  service_ids = var.service_ids
+
+  ######### access group policy ###############
+  policies = var.policies
+
+  ######### access group dynamic rule #########
+  dynamic_rules = var.dynamic_rules
 }
 
-```
-
-attaching members to existing access group:
-
-```hcl
-provider "ibm" {
-}
-
-module "access_group_members" {
-  source  = "terraform-ibm-modules/iam/ibm//modules/access-group-members"
-
-  access_group_id   = var.access_group_id
-  ibm_ids           = var.ibm_ids
-  service_ids       = var.service_ids
-}
 ```
 ## NOTE:
 

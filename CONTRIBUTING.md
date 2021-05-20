@@ -5,7 +5,7 @@ This document provides guidelines for contributing to the module.
 ## File structure
 
 The project has the following folders and files:
-
+```
 ├── README.md
 ├── modules/
 │   ├── nestedA/
@@ -20,5 +20,6 @@ The project has the following folders and files:
 │   │   ├── main.tf
 │   ├── exampleB/
 │   ├── .../
+```
 
 Please make sure you are changes are inline with directory structure mentined as above.
