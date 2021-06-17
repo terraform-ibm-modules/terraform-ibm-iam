@@ -29,7 +29,7 @@ variable "account_management" {
 }
 
 variable "resources" {
-  type        = any
+  type        = list(any)
   description = "A nested block describes the resource of this policy."
   default     = null
 }
