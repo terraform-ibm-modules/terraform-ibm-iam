@@ -27,7 +27,7 @@ variable "account_management" {
 }
 
 variable "resources" {
-  type    = any
+  type    = list(any)
   default = null
 }
 

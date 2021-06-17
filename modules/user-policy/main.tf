@@ -8,7 +8,7 @@ resource "ibm_iam_user_policy" "policy" {
   roles  = var.roles
 
   dynamic resources {
-    for_each = var.resources
+    for_each = var.resources != null ? var.resources : []
     content {
       region               = (resources.value.region != null ? resources.value.region : null)
       service              = (resources.value.service != null ? resources.value.service : null)
