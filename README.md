@@ -1,13 +1,14 @@
 # IBM IAM Terraform Module
 
 This is a collection of modules that make it easier to provision a IAM resources on IBM Cloud Platform:
-* [access-group](modules/access-group)
-* [service-ids](modules/service-ids)
-* [service-authorization](modules/service-authorization)
-* [custom-role](modules/custom-role)
-* [users](modules/users)
-* [user-policy](modules/user-policy)
-* [user-settings](modules/user-settings)
+
+* access-group
+* service-ids
+* service-authorization
+* custom-role
+* users
+* user-policy
+* user-settings
 
 ## Compatibility
 
