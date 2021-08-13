@@ -8,17 +8,17 @@ resource "ibm_iam_user_invite" "invite_user" {
   access_groups = (var.access_groups != null ? var.access_groups : null)
 
   dynamic iam_policy {
-    for_each = var.iam_policies
+    for_each = var.iam_policies != null ? var.iam_policies : []
     content {
       roles = iam_policy.value.roles
       resources {
-        region               = (iam_policy.value.resources_region != null ? iam_policy.value.resources_region : null)
-        attributes           = (iam_policy.value.resources_attributes != null ? iam_policy.value.resources_attributes : null)
-        service              = (iam_policy.value.resources_service != null ? iam_policy.value.resources_service : null)
-        resource_instance_id = (iam_policy.value.resources_resource_instance_id != null ? iam_policy.value.resources_resource_instance_id : null)
-        resource_type        = (iam_policy.value.resources_resource_type != null ? iam_policy.value.resources_resource_type : null)
-        resource             = (iam_policy.value.resources_resource != null ? iam_policy.value.resources_resource : null)
-        resource_group_id    = (iam_policy.value.resources_resource_group_id != null ? iam_policy.value.resources_resource_group_id : null)
+        region               = lookup(element(var.iam_policies, 0), "resources_region", null)
+        attributes           = lookup(element(var.iam_policies, 0), "resources_attributes", null)
+        service              = lookup(element(var.iam_policies, 0), "resources_service", null)
+        resource_instance_id = lookup(element(var.iam_policies, 0), "resources_resource_instance_id", null)
+        resource_type        = lookup(element(var.iam_policies, 0), "resources_resource_type", null)
+        resource             = lookup(element(var.iam_policies, 0), "resources_resource", null)
+        resource_group_id    = lookup(element(var.iam_policies, 0), "resources_resource_group_id", null)
       }
 
       account_management = iam_policy.value.account_management
