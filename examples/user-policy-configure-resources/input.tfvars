@@ -30,14 +30,16 @@ Say we dont want to configure the "account_management", make it null as follows
 
      account_management = null
 
+NOTE: Max number of resources can be defined as part of policy is 1 only.
+
+For more info https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_policy
+
 ****************************************************************************************************************************/
 
 resources = [{
   region               = "us-south"
   service              = "containers-kubernetes"
   resource_instance_id = "crn:v1:bluemix:public:containers-kubernetes:us-south:a/fcdb764102154c7ea8e1b79d3a64afe0:btgbsard0ss76j8snblg::"
-  resource_type        = null
-  resource             = null
   resource_group_id    = "19e34037c9fe41e5aa9d682c9089b044"
   attributes = {
     "namespace" = "default"

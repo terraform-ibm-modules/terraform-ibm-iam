@@ -33,13 +33,13 @@ resource "ibm_iam_access_group_policy" "policy" {
   dynamic resources {
     for_each = (each.value["resources"] != null ? each.value["resources"] : [])
     content {
-      region               = (resources.value.region != null ? resources.value.region : null)
-      attributes           = (resources.value.attributes != null ? resources.value.attributes : null)
-      service              = (resources.value.service != null ? resources.value.service : null)
-      resource_instance_id = (resources.value.resource_instance_id != null ? resources.value.resource_instance_id : null)
-      resource_type        = (resources.value.resource_type != null ? resources.value.resource_type : null)
-      resource             = (resources.value.resource != null ? resources.value.resource : null)
-      resource_group_id    = (resources.value.resource_group_id != null ? resources.value.resource_group_id : null)
+      region               = lookup(element(each.value["resources"], 0), "region", null)
+      attributes           = lookup(element(each.value["resources"], 0), "attributes", null)
+      service              = lookup(element(each.value["resources"], 0), "service", null)
+      resource_instance_id = lookup(element(each.value["resources"], 0), "resource_instance_id", null)
+      resource_type        = lookup(element(each.value["resources"], 0), "resource_type", null)
+      resource             = lookup(element(each.value["resources"], 0), "resource", null)
+      resource_group_id    = lookup(element(each.value["resources"], 0), "resource_group_id", null)
     }
   }
 
