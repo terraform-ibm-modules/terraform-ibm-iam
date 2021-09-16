@@ -20,6 +20,7 @@ module "access_group" {
   provision   = var.provision
 
   ######### access group members ##############
+  add_members = var.add_members
   ibm_ids     = var.ibm_ids
   service_ids = var.service_ids
 
@@ -42,6 +43,7 @@ If we want to make use of a particular version of module, then set the argument 
 |---------------------------|------------------------------------------------------------------|:-------------|:------- |:---------|
 | name                      | A descriptive name used to identify the access group             | string       | n/a     | yes      |
 | provision                 | Used to decide whether to create a new access group or not       | bool         | true    | no       |
+| add_members               | Enable this to add memebers to access group                      | bool         | true    | no       |
 | description               | The description of the access group.                             | string       | n/a     | no       |
 | tags                      | Tags that should be applied to the service                       | list(string) | n/a     | no       |
 | service_ids               | List of service IDS add to  access group.                        | string       | n/a     | no       |
