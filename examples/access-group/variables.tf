@@ -29,6 +29,12 @@ variable "provision" {
 
 ############ access group memeber ####################
 
+variable "add_members" {
+  type        = bool
+  description = "Enable this to add memebers to access group"
+  default     = true
+}
+
 variable "ibm_ids" {
   description = "A list of IBM IDs that you want to add to or remove from the access group."
   type        = list(string)

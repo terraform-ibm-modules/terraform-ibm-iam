@@ -16,6 +16,12 @@ variable "provision" {
   default     = true
 }
 
+variable "add_members" {
+  type        = bool
+  description = "Enable this to add memebers to access group"
+  default     = true
+}
+
 variable "description" {
   description = "Description to access group"
   type        = string

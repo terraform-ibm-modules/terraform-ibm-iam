@@ -17,7 +17,7 @@ output "dynamic_rule_ids" {
 
 output "member_id" {
   description = "The unique identifier of the access group members."
-  value       = ibm_iam_access_group_members.accgroupmem.id
+  value       = concat(ibm_iam_access_group_members.accgroupmem.*.id, [""])[0]
 }
 
 output "policy_ids" {

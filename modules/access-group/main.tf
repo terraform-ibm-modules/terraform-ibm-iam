@@ -16,6 +16,7 @@ data "ibm_iam_access_group" "accgroupdata" {
 }
 
 resource "ibm_iam_access_group_members" "accgroupmem" {
+  count           = var.add_members ? 1 : 0
   access_group_id = var.provision ? ibm_iam_access_group.accgroup[0].id : data.ibm_iam_access_group.accgroupdata[0].groups[0].id
   ibm_ids         = (var.ibm_ids != null ? var.ibm_ids : null)
   iam_service_ids = (var.service_ids != null ? var.service_ids : null)

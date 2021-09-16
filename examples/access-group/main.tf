@@ -19,6 +19,7 @@ module "access_group" {
   provision   = var.provision
 
   ######### access group members ##############
+  add_members = var.add_members
   ibm_ids     = var.ibm_ids
   service_ids = var.service_ids
 
