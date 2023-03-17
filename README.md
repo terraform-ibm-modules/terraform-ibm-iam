@@ -1,3 +1,9 @@
+> **Note**  
+> Got comments or issues or feature requests?  
+> Submit them in the [common issue tracking](https://github.com/terraform-ibm-modules/terraform-ibm-issue-tracker) repositry.
+
+---
+
 # IBM IAM Terraform Module
 
 This is a collection of modules that make it easier to provision a IAM resources on IBM Cloud Platform:
