@@ -1,5 +1,23 @@
 # IBM IAM Terraform Module
 
+---
+
+## Module archived
+
+:spider_web: This repo is no longer maintained and is archived. Use the [IBM Cloud Provider](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs) resources directly to create IAM resources, or use one of following public modules if you consume the module from GitHub: 
+- [terraform-ibm-iam-service-id](https://github.com/terraform-ibm-modules/terraform-ibm-iam-service-id)
+- [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group)
+
+## Changes if you use the Hashicorp registry
+
+:exclamation: **Important:**  This module will be deleted from the Hashicorp registry on 1 September 2023. 
+
+If you consume the [access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam/tree/main/modules/access-group) or [service-ids](https://github.com/terraform-ibm-modules/terraform-ibm-iam/tree/main/modules/service-ids) submodules from the Hashicorp registry, use one of these instead:
+- [iam-service-id](https://registry.terraform.io/modules/terraform-ibm-modules/iam-service-id/ibm/latest)
+- [iam-access-group](https://registry.terraform.io/modules/terraform-ibm-modules/iam-access-group/ibm/latest)
+
+---
+
 This is a collection of modules that make it easier to provision a IAM resources on IBM Cloud Platform:
 
 * access-group
